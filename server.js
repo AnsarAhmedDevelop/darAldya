@@ -4,14 +4,14 @@ import errorHandler from "./middlewares/errorHandler.js";
 import routes from "./routes/index.js";
 import cors from "cors";
 import dotenv from "dotenv";
-
+// this is for envirn
 dotenv.config({
   path: "./config/.env",
 });
 
 const app = express();
 
-// Database connection
+// Database connection goes here
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
